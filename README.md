@@ -1,13 +1,17 @@
 # 🖱️ Clickable Terminal
 Navigate your directories like a pro. This setup lets you click icon-enhanced folders and filenames to move through your filesystem.
-<img width="75%" src="https://github.com/user-attachments/assets/f102a741-5468-4333-909f-a03fc908dae6" />
 
+![Video Project 1](https://github.com/user-attachments/assets/319e85dd-617d-40d2-9b86-7f4ba7931096)
 ---
 
-## 1. Prerequisites
+
+## 1. Install Prereqs
 Ensure you have the necessary tools installed:
-* **Kitty Terminal:** [Download Here](https://sw.kovidgoyal.net/kitty/binary/)
-* **eza:** A modern `ls` replacement. Install via `brew install eza` or your system's package manager.
+* Install **[Kitty Terminal](https://sw.kovidgoyal.net/kitty/binary/)**.
+* Install **eza**, a modern `ls` replacement. 
+```
+brew install eza
+```
 
 ---
 
@@ -22,7 +26,7 @@ action send_text normal,application \x15cd "${FILE_PATH}" && ls\r
 ```
 
 ## 3. Update your Shell Config
-Add this logic to your ~/.zshrc. It wraps eza to generate the clickable links and adds a "Go Up" button to every ls output.
+Add this logic to your `~/.zshrc`. It wraps eza to generate the clickable links and adds a "Go Up" button to every ls output.
 
 ```bash # Kitty terminal clickable navigation logic
 if [[ "$TERM" == "xterm-kitty" ]]; then

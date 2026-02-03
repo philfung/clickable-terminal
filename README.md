@@ -5,13 +5,13 @@ Navigate your directories like a pro. This setup lets you click icon-enhanced fo
 ---
 
 
-## 1. Install Prereqs
+## 1. Prereqs
 Ensure you have the necessary tools installed:
 * Install **[Kitty Terminal](https://sw.kovidgoyal.net/kitty/binary/)**.
 * Install **eza**, a modern `ls` replacement. 
-```
-brew install eza
-```
+    ```
+    brew install eza
+    ```
 
 ---
 
